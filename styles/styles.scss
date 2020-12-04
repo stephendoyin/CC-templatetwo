@@ -1,0 +1,263 @@
+// font-family: 'PT Sans', sans-serif;
+// @import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap");
+@import url("./font.css");
+html {
+  font-size: 13px;
+}
+
+@media only screen and (min-width: 767px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 922px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  font-family: Gilroy, "sans-serif";
+  color: #111770;
+}
+
+.navigation {
+  height: 99px;
+  width: 100%;
+  z-index: 100;
+  position: relative;
+  top: 0;
+  left: 0;
+
+  &__inner {
+    width: 100%;
+  }
+
+  &__link {
+    margin-left: 2.5rem;
+    text-decoration: none !important;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.hero {
+  background-color: #f8fbff;
+  padding: 12rem 0 9rem 0;
+  z-index: 0;
+
+  &__title {
+    font-size: 2.6rem;
+    font-weight: 900;
+  }
+
+  &__bg {
+    content: "";
+    height: 110%;
+    width: 100%;
+    background: #2f37a4;
+    border-radius: 0 0 21rem 0;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+
+    &__inner-circle {
+      content: "";
+      height: 28rem;
+      width: 28rem;
+      background: #2f3ab6;
+      border-radius: 0 85% 0 0;
+      z-index: 0;
+      position: absolute;
+      bottom: -10%;
+      left: 0;
+    }
+  }
+}
+
+.btn {
+  border-radius: 16px 6px 6px 6px;
+  min-width: 160px;
+  font-weight: 600;
+  line-height: 40px;
+
+  &-primary {
+    background: #37b5ff;
+    border: #37b5ff;
+    color: #fff !important;
+  }
+
+  &-white {
+    background: #fff;
+    color: #37b5ff;
+  }
+}
+
+.card {
+  &__body {
+    padding: 2rem 1.7rem;
+    border: 1px solid #eee;
+    box-shadow: 0px 16px 16px rgba(50, 50, 71, 0.08),
+      0px 24px 32px rgba(50, 50, 71, 0.08);
+    background: #fff;
+    &--space {
+      margin-top: 3rem;
+    }
+    &--space-two {
+      margin-top: 0rem;
+    }
+    &--space--three {
+      margin-top: 0rem;
+    }
+    &__round {
+      border-radius: 2rem 8px 8px 8px;
+    }
+  }
+
+  &__icon-container {
+    height: 55px;
+    width: 55px;
+    background: #b5f2e3;
+    border-radius: 7px;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .card__body--space-two {
+    margin-top: 7rem;
+  }
+  .card__body--space--three {
+    margin-top: 11rem;
+  }
+}
+
+section {
+  padding: 6rem 0;
+}
+
+.section {
+  &__robo {
+    left: 0;
+    bottom: 0;
+  }
+  &__colored {
+    background: #f8f7ff;
+  }
+  &__grad {
+    background: linear-gradient(
+      180deg,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0.660833) 45.83%,
+      #f8f7ff 100%
+    );
+  }
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Pt sans", sans-serif;
+
+  &--small {
+    font-size: 1.3rem;
+  }
+
+  &--bigger {
+    font-size: 3rem;
+  }
+  &__wrapper {
+    min-width: 100%;
+    transform: translateY(0rem);
+    margin-top: 5rem;
+    &__pattern {
+      position: absolute;
+      right: 0;
+      top: -5.5rem;
+      z-index: 0;
+    }
+  }
+}
+
+.sub {
+  color: #37b5ff;
+  font-size: 0.9rem;
+}
+
+.container {
+  z-index: 2;
+}
+
+.dot-pattern {
+  max-width: 180px;
+  bottom: 40%;
+  left: -10%;
+}
+
+.count__card {
+  padding: 1.5rem;
+  height: 100%;
+}
+
+.custom-round {
+  border-radius: 7px;
+}
+
+.strip {
+  background: #29308a;
+  padding: 3.5rem 3rem;
+  transform: translateY(50%);
+  box-shadow: 0px 20px 20px rgba(50, 50, 71, 0.1),
+    0px 32px 40px rgba(50, 50, 71, 0.1);
+  border-radius: 19px;
+  margin-bottom: 27%;
+}
+
+.footer {
+  padding: 5rem 0;
+
+  &__link {
+    margin-left: 2rem;
+    display: inline-block;
+    color: #032752;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .strip {
+    margin-bottom: 9%;
+  }
+  .title__wrapper {
+    min-width: 50%;
+    transform: translateY(3rem);
+    margin-top: 0;
+  }
+  .hero__bg {
+    width: 75%;
+  }
+}
+
+.bg-purple {
+  background: #c1aef8;
+}
+
+.bg-blue {
+  background: #b5f2e3;
+}
+
+.bg-pink-dark {
+  background: #f8aec3;
+}
+
+.bg-pink {
+  background: #facfca;
+}
